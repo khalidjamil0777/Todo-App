@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Tasks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrapper">
+
+    <h1>Daily Tasks</h1>
+    <p class="subtitle" id="today-date"></p>
+
+    <div class="input-row">
+      <input type="text" id="task-input" placeholder="Add a new task…"/>
+      <button class="btn-add" id="add-btn">+</button>
+    </div>
+
+    <!-- Pending -->
+    <div class="section-label">
+      Pending Tasks <span class="badge-count" id="pending-count">0</span>
+    </div>
+    <div id="pending-list"></div>
+
+    <hr class="divider"/>
+
+    <!-- Completed -->
+    <div class="section-label">
+      Completed Tasks <span class="badge-count" id="done-count">0</span>
+    </div>
+    <div id="done-list"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
